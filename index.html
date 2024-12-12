@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Archive</title>
+    <link rel="stylesheet" href="cs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Multimedia Archive</h1>
+        <input type="text" id="searchInput" placeholder="Search files...">
+    </header>
+    <main>
+        <section class="upload-section">
+            <h2>Upload Media</h2>
+            <input type="file" id="fileInput" multiple accept="image/*,video/*,audio/*">
+            <button id="uploadButton"><i class="fas fa-upload"></i> Upload</button>
+            <button id="themeToggle"><i class="fas fa-adjust"></i> Toggle Theme</button>
+            <div id="progressContainer">
+                <div id="progressBar"></div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2>Media Gallery</h2>
+            <div id="categoryFilters">
+                <button data-category="all"><i class="fas fa-folder-open"></i> All</button>
+                <button data-category="image"><i class="fas fa-image"></i> Images</button>
+                <button data-category="video"><i class="fas fa-video"></i> Videos</button>
+                <button data-category="audio"><i class="fas fa-music"></i> Audios</button>
+            </div>
+            <button id="deleteAllButton"><i class="fas fa-trash-alt"></i> Delete All</button>
+            <div id="gallery"></div>
+        </section>
+    </main>
+    <script src="java.js"></script>
+</body>
+</html>
